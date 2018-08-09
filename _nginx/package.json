@@ -1,0 +1,37 @@
+{
+  "name": "tclshop-wap-h5",
+  "version": "1.0.0",
+  "description": "TCL商城重构wap端",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "publish": "gulp publish",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://10.120.54.112/tclshop/tclshop-wap-h5.git"
+  },
+  "author": "chuchur",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-debug": "^3.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^3.3.0",
+    "gulp-nunjucks-api": "^0.7.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.1.2",
+    "gulp-zip": "^4.0.0",
+    "http-proxy-middleware": "^0.17.4",
+    "opn": "^5.0.0"
+  }
+}

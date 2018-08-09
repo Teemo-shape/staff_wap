@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}- {{ siteName }}</title>
+  {% include "./head.html" %} {% block header %}{% endblock %}
+</head>
+
+<body>
+  <header class="m-navbar navbar-bottom-line-color" style="background-color: rgb(255, 255, 255); height: 0.9rem;">
+    <div class="navbar-item"><a href="javascript:history.go(-1)" class="link-active"><span><i class="back-icon iky-arrow-left-bold" style="color: rgb(92, 92, 92);"></i></span></a></div>
+    <div class="navbar-center-box" style="height: 0.9rem;">
+      <div class="navbar-center"><span class="center-title" style="color: rgb(92, 92, 92); font-size: 0.4rem;">{% block navbar %}{% endblock %}</span></div>
+    </div>
+    <div class="navbar-item"></div>
+  </header>
+  {% block body %}{% endblock %} {% block footer %}{% endblock %}
+</body>
+<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9428" charset="utf-8"></script>
+
+</html>

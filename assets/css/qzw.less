@@ -1,0 +1,741 @@
+.index {
+    font-size: .6rem;
+    margin-bottom: 2.85rem;
+    background: #f5f5f5;
+    position: relative;
+    .searchbox {
+        position: absolute;
+        z-index: 1000;
+        width: 16rem;
+        top: 0;
+        background-image: linear-gradient(-180deg, #000000 0%, rgba(0,0,0,0.00) 100%);    
+        opacity: 0.7;
+        height: 1.877373rem;
+        .iky-tcl-logo {
+            color: red;
+            font-size: 1.5rem;
+            float: left;
+            margin: 0 .6rem;
+            position: absolute;
+            z-index: 99;
+            margin-top: .5rem;
+            &:after {
+                content: '';
+                background: #fff;
+                width: 1rem;
+                height: .6rem;
+                display: block;
+                position: absolute;
+                left: .2rem;
+                top: .4rem;
+                z-index: -1;
+            }
+            &:before {
+                background: transparent;
+            }
+        }
+        .search-box {
+            height: 1.194692rem;
+            line-height: 1.194692rem;
+            background: rgba(250,250,250,1);
+            margin: .4rem .6rem;
+            border-radius: 6rem;
+            color: #aaa;
+            span {
+                font-size: .8rem;
+                // margin: .3rem .2rem 0;
+                float: left;
+                height: .6rem;
+                line-height: .6rem;
+                margin: .3rem .2rem;
+                border-left: 1px solid #ccc;
+                padding-left: 0.3rem;
+
+            }
+            input {
+                width: 10rem;
+                border: none;
+                color: #aaa;
+                line-height: 1.25rem;
+                /* display: inline-block; */
+                float: left;
+            }
+        }
+    }
+    .zhuanti{
+        display: flex;
+        margin: .128003rem;
+        margin-bottom: .469343rem;
+        a {
+            flex: 1;
+            justify-content: center;
+            height: 4.480096rem;
+            width: 5.162777rem;
+            overflow: hidden;
+            &:not(:last-child){
+                padding-right: .128003rem;
+            }
+            .yd-grids-txt {
+                height: 100%;
+                width: 100%;
+            }
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+    }
+    .active {
+        background: #fff;
+        position: fixed;
+        border-bottom: 1px solid #ddd;
+        z-index: 9;
+        .search-box {
+            background: #f0f0f0;
+        }
+    }
+    .hb {
+        height: 9.877544rem;
+        img{
+            display: block;
+            height:9.877544rem;
+        }
+    }
+    .sw1 {
+        height: 16rem;
+        img {
+            width: 100%;
+
+        }
+    }
+    .news {
+        img {
+            width: 100%;
+        }
+        a:before, a::after {
+            border: none !important;
+        }
+        .yd-grids-txt {
+            padding: 0;
+            width: 7.125rem;
+            height: 5.25rem;
+            margin :0 auto;
+        }
+        .yd-grids-item {
+            padding: .3rem;
+        }
+    }
+    .rec {
+        .lt {
+            height: 11.3rem;
+            a {
+                height: 100%;
+                float: right;
+                width: 7.9rem;
+            }
+        }
+        .rt {
+            height: 11.3rem;
+            a {
+                width: 8rem;
+                height: 5.6rem;
+            }
+        }
+    }
+}
+
+.box {
+    margin-bottom: .5rem;
+    position: relative;
+    .hot {
+        position: absolute;
+        bottom: 1.125rem;
+        right: 0.375rem;
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+    }
+    .title {
+        // white-space: nowrap;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .yd-gridstitle {
+        background: #fff;
+        font-size: .65rem;
+        color: #333;
+        padding: .55rem;
+    }
+    img {
+        width: 100%;
+    }
+    .yd-slider {
+        height: 4.25rem;
+    }
+    .list {
+        .item {
+            width: 50%;
+            float: left;
+            overflow: hidden;
+            padding: .6rem;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            .title {
+                color: #333;
+            }
+            .sub {
+                color: #aaa;
+                text-decoration: line-through;
+            }
+            .price {
+                color: #ff4545;
+            }
+            .type {
+                img {
+                    max-height: .8rem;
+                    width: auto !important;
+                    max-width: 2.5rem;
+                    position: absolute;
+                    z-index: 8;
+                }
+            }
+            &:first-child {
+                height: 10.2rem;
+                img {
+                    width: 7rem;
+                    height: 7rem;
+                }
+                .img {
+                    position: absolute;
+                    bottom: 0;
+                }
+                .sub {
+                    float: left;
+                }
+            }
+            &:nth-child(2) {
+                border-bottom: 1px solid #ddd;
+            }
+            &:nth-child(2), &:nth-child(3) {
+                border-left: 1px solid #efefef;
+                height: 5.1rem;
+                img {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                }
+                .img {
+                    position: absolute;
+                    bottom: 0;
+                    right: .5rem;
+                }
+            }
+        }
+    }
+    .more {
+        position: absolute;
+        top: -1.3rem;
+        right: .3rem;
+        z-index: 8;
+        color: #999;
+    }
+}
+
+
+
+.v_category {
+    .yd-popup {
+        box-sizing: content-box;
+        margin-left: -8rem;
+        left: 50%;
+    }
+    .title {
+        text-align: center;
+        font-size: .8rem;
+        margin: 1rem 0;
+        line-height: .8rem;
+        span {
+            color: #999;
+            position: absolute;
+            right: 1.25rem;
+        }
+    }
+    .yd-grids-3:before {
+        border: none;
+    }
+    .line {
+        width: 14.8rem;
+        margin: .3rem auto;
+        border-top: 1px solid #e6e6e6;
+        clear: both;
+    }
+    .yd-grids-item {
+        .yd-grids-icon {
+            margin: .45rem 0;
+            height: 1.5rem;
+            span {
+                display: block;
+                height: 1.5rem;
+                width: 1.5rem;
+                background: url(../img/icons.png);
+                background-size: cover;
+            }
+            .tv {
+                background-position: -4.48rem 0;
+            }
+            .mobile {
+                background-position: 0 0;
+            }
+            .fridge {
+                background-position: -1.5rem 0;
+            }
+            .air-conditioner {
+                background-position: -3.01rem 0;
+            }
+            .washer {
+                background-position: -7.5rem 0;
+            }
+            .health {
+                background-position: -9rem 0;
+            }
+            .about {
+                background-position: 11.9rem 0;
+            }
+            .bbs {
+                background-position: 6rem 0;
+            }
+            .jf-shop {
+                background-position: -13.45rem 0;
+            }
+            .dealer {
+                background-position: -10.5rem 0;
+            }
+            .emp-buy {
+                background-position: -15rem 0;
+            }
+            .uec{
+                background-position: -16.5rem 0;
+            }
+        }
+        .yd-grids-txt {
+            font-size: .6rem;
+        }
+    }
+}
+
+.bulk-purchase {
+    margin-bottom: 2.45rem;
+    background: #fff;
+    .banner {
+        img {
+            width: 100%;
+        }
+    }
+    .con {
+        width: 92%;
+        margin: 0 auto;
+        .iky-arrow-down {
+            position: absolute;
+            right: .5rem;
+            top: .5rem;
+        }
+        h2, h3 {
+            font-size: 0.9rem;
+            color: #333;
+            font-weight: normal;
+            line-height: 1.5;
+            padding: 0.55rem 0;
+            margin-bottom: 0.35rem;
+            border-bottom: 1px solid #ccc;
+        }
+        .txt {
+            font-size: .6rem;
+            line-height: 1rem;
+            text-indent: 1.2rem;
+        }
+        h3 {
+            text-align: center;
+        }
+        h2 {
+            font-size: .8rem;
+        }
+        .group {
+            margin: .3rem auto;
+            width: 100%;
+            position: relative;
+            .iky-arrow-down{
+                &::before{
+                    font-size: .65rem;
+                }
+            }
+            input {
+                width: 100%;
+                background-color: #f5f5f5;
+                color: #000;
+                text-indent: 5%;
+                border-radius: .2rem;
+                // height: 2.45rem;
+                // line-height: 2.45rem;
+                font-size: 0.75rem;
+                border: 0;
+                padding: .4rem 0;
+                line-height: .7rem;
+            }
+            .yd-btn {
+                background: #E60011;
+                color: #fff;
+            }
+            p {
+                margin: 0;
+                // text-align: left;
+                color: red;
+                font-size: .6rem;
+            }
+        }
+        .area {
+            background-color: #f5f5f5;
+            border-radius: .2rem;
+            font-size: 0.75rem;
+            // overflow: hidden;
+            height: 7.5rem;
+            box-sizing: content-box;
+            position: relative;
+            span {
+                color: #999;
+                padding: .5rem .7rem;
+                display: inline-block;
+            }
+            textarea {
+                background-color: transparent;
+                color: #333;
+                width: 60%;
+                border: none;
+                font-size: .5rem;
+                height: 6.75rem;
+                padding-top: .75rem;
+                vertical-align: top;
+                resize: none;
+            }
+        }
+        .tip {
+            margin: .8rem 0;
+            text-align: right;
+            font-size: .6rem;
+        }
+        .link {
+            .tel, .email {
+                width: 100%;
+                padding: .7rem 0;
+            }
+            span {
+                border-radius: 50%;
+                display: table;
+                font-size: 1.2rem;
+                height: 2.45rem;
+                line-height: 2.45rem;
+                margin-right: 1rem;
+                text-align: center;
+                width: 2.45rem;
+                background: #4cda64;
+                border-radius: 50%;
+                color: #fff;
+                float: left;
+            }
+            .iky-email {
+                background: #00a0e9;
+            }
+            p {
+                font-size: 0.75rem;
+                color: #333;
+                margin-top: 0.25rem;
+            }
+        }
+        .advantage {
+            overflow: hidden;
+            margin-bottom: 1rem;
+            .item {
+                float: left;
+                width: 47%;
+                margin: 1%;
+                height: 7rem;
+                text-align: center;
+                background-color: #f5f5f5;
+                span {
+                    display: block;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    font-size: 1.5rem;
+                    height: 1.8rem;
+                    line-height: 1.8rem;
+                    margin: 0.5rem auto;
+                    text-align: center;
+                    vertical-align: middle;
+                    width: 1.8rem;
+                    color: #fc4b4e;
+                }
+                h2 {
+                    font-size: .75rem;
+                    width: 100%;
+                    text-align: center;
+                    color: #fc4b4e;
+                    margin: .2rem auto;
+                    border: none;
+                    padding: 0;
+                }
+                p {
+                    font-size: .5rem;
+                    width: 90%;
+                    text-align: center;
+                    color: #666;
+                    margin: .2rem auto;
+                }
+            }
+        }
+    }
+}
+
+.about {
+    .cell {
+        img {
+            width: 100%;
+        }
+        a:before, a::after {
+            border: none !important;
+        }
+        .yd-grids-txt {
+            padding: 0;
+        }
+        .yd-grids-item {
+            padding: .15rem;
+        }
+        .yd-grids-2 {
+            padding: .45rem;
+        }
+    }
+}
+
+.footer {
+    background: #31323c;
+    color: #999;
+    padding: .7rem .75rem;
+    .conact {
+        span {
+            width: 1.2rem;
+            height: 1.2rem;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            line-height: .8rem;
+            font-size: .6rem;
+            color: #fff;
+            border-radius: 50%;
+            padding: .2rem;
+            margin: 0 .5rem 0 .2rem;
+        }
+    }
+    .iky-tell {
+        background: #53b044;
+    }
+    .iky-weibo {
+        background: #d15b2f;
+    }
+    .iky-webchat-o {
+        background: #449e34;
+    }
+    .iky-tcl-logo {
+        // background: #53b044;
+        color: #ab171f;
+        font-size: 1.6rem;
+        float: left;
+        margin: -.2rem .5rem 0 0;
+        position: absolute;
+        left: 0;
+        &:after {
+            content: '';
+            background: #fff;
+            width: 1.2rem;
+            height: .6rem;
+            display: block;
+            position: absolute;
+            left: .2rem;
+            top: .4rem;
+            z-index: 1;
+        }
+        &:before {
+            background: transparent !important;
+            z-index: 2;
+        }
+    }
+    .lang {
+        span {
+            font-size: .55rem;
+        }
+        .active {
+            background: #272832;
+            font-size: .55rem;
+            padding: .1rem .2rem;
+            border-radius: .1rem;
+            margin-right: .5rem;
+        }
+    }
+    .copy-right {
+        margin-top: .3rem;
+        font-size: .4rem;
+        padding: .5rem 0 .2rem 2rem;
+        border-top: 1px solid #3c3c46;
+        line-height: .7rem;
+        position: relative;
+    }
+}
+
+.pages {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    a {
+        display: block;
+        padding: 3px 5px;
+        float: auto !important;
+        width: auto !important;
+        margin: 5px;
+    }
+}
+
+._404 {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 16rem;
+    background: #fff;
+    img {
+        margin: 50% auto;
+    }
+}
+
+.error {
+    .error-con {
+        font-size: .6rem;
+        text-align: center;
+        padding: 3rem 0;
+        line-height: 1rem;
+        color: #969696;
+    }
+    .refresh{
+        width: 60%;
+        margin: 0 auto;
+        background: #fbfbfb;
+        color: #9a9a9a;
+    }
+}
+
+//服务政策
+.policy {
+    font-size: .7rem;
+    // background: #fff;
+    .bottom {
+        background: white;
+        border-top: 1px solid #ececec;
+        .don {
+            height: 2.2rem;
+            line-height: 2.2rem;
+            padding-left: 1.2rem;
+            border-bottom: 1px solid #ececec;
+            color: #666;
+            font-size: .6rem;
+            .fr {
+                float: right;
+            }
+            .fl {
+                float: left;
+            }
+            .icon {
+                height: 1.1rem;
+                width: 1.1rem;
+            }
+            .mid {
+                color: #666;
+                margin-left: .5rem;
+                div {
+                    font-size: .45rem;
+                    color: #999;
+                }
+            }
+        }
+        li.don {
+            height: 2.5rem;
+            line-height: 2.5rem;
+        }
+        .title {
+            padding-left: .5rem;
+            font-size: .65rem;
+        }
+    }
+    .policy-con {
+        padding: .5rem;
+        line-height: 1.2rem;
+        background: #fff;
+        table {
+            width: 100% !important;
+        }
+        strong {
+            font-weight: normal;
+        }
+        p {
+            strong span {
+                // color: #333;
+                font-size: .65rem;
+            }
+            span {
+                // color: #666;
+                font-size: .6rem;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.service-top {
+    background: white;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #e8e8e8;
+    .don {
+        font-size: .65rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        padding-left: .5rem;
+        border-bottom: 1px solid #ececec;
+    }
+    .select {
+        // height: 4.5rem;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        ul {
+            li {
+                float: left;
+                width: 25%;
+                text-align: center;
+                font-size: .6rem;
+                color: #333;
+                div {
+                    margin-top: .75rem;
+                    img {
+                        width: 1.75rem;
+                        height: 1.75rem;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                p {
+                    margin-top: .6rem;
+                    /* white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; */
+                    padding: 0 .6rem;
+                }
+            }
+        }
+    }
+}

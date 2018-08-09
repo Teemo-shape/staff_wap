@@ -1,0 +1,29 @@
+{% extends "../layout/newUC.html" %} {% block title %}关联账号{% endblock %}{% block navbar %}关联账号{% endblock %} {% block header%}
+<script src="{{cdnPath}}res/js/binduser{{hash}}.js"></script>
+{%endblock%} {% block body %}
+<div class="main" id="main">
+	<!--注册 start-->
+	<div class="m-register reset-password">
+		<h3>关联TCL账号</h3>
+		<div class="m-register-item">
+			<ul>
+				<li class="bor-bott">
+					<div class="item">
+						<div class="icon fl iky-user"></div>
+						<input class="fl item-input nminfo" id="username" type="text" value="" placeholder="请输入手机号或邮箱账号" />
+						<div class="icon iky-remove"></div>
+					</div>
+				</li> 
+				<li class="bor-bott">
+					<div class="item">
+						<div class="icon fl iky-lock"></div>
+						<input class="fl item-input pswdinfo" type="password" maxlength="16" minlength="8" placeholder="请输入密码" id="password"/>
+						<div class="icon passwordSee fr iky-eye"></div>
+					</div>
+				</li>
+			</ul> 
+		</div>
+	</div>
+	<input type="button" class="m-option-submit" id="submits"  value="关联" />
+</div>
+{%endblock%}

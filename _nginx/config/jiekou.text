@@ -1,0 +1,139 @@
+个人中心
+Request URL:http://10.120.54.47/pages/usercenterindex/usercenter.html
+Request Method:GET
+Status Code:200 OK (from disk cache)
+
+管理账号密码
+Request URL:http://10.120.54.47/pages/manageuser/manageuser.html
+Request Method:GET
+Status Code:304 Not Modified
+
+地址管理
+Request URL:http://10.120.54.47/pages/addaddress/addaddress.html
+Request Method:GET
+Status Code:200 OK (from disk cache)
+
+增值发票管理
+Request URL:http://10.120.54.47/pages/addinvoice/addinvoice.html
+Request Method:GET
+Status Code:200 OK (from disk cache)
+电子发票管理
+Request URL:http://10.120.54.47/pages/elinvoice/elinvoice.html
+Request Method:GET
+Status Code:200 OK (from disk cache)
+
+我的订单
+全部
+Request URL:http://10.120.54.47/rest/usercenter/order/listKuyu
+Request Method:POST
+Status Code:200 OK
+pageShow:10
+nowPage:1
+orderState:
+searchName:
+ranNum:33734
+待付款
+Request URL:http://10.120.54.47/rest/usercenter/order/listKuyu
+Request Method:POST
+Status Code:200 OK
+pageShow:10
+nowPage:1
+orderState:1
+searchName:
+ranNum:77941
+待发货
+Request URL:http://10.120.54.47/rest/usercenter/order/listKuyu
+Request Method:POST
+Status Code:200 OK
+pageShow:10
+nowPage:1
+orderState:4
+searchName:
+ranNum:96070
+待收货
+Request URL:http://10.120.54.47/rest/usercenter/order/listKuyu
+Request Method:POST
+Status Code:200 OK
+pageShow:10
+nowPage:1
+orderState:6
+searchName:
+ranNum:69061
+待评价
+Request URL:http://10.120.54.47/rest/usercenter/order/listKuyu
+Request Method:POST
+Status Code:200 OK
+pageShow:10
+nowPage:1
+orderState:11
+searchName:
+ranNum:18860
+
+我的优惠券
+未使用
+Request URL:http://10.120.54.47/rest/usercenter/coupondetails/searchCouponDetailsKuyu
+Request Method:POST
+Status Code:200 OK
+state:1
+couponId:
+nowPage:1
+pageShow:6
+已使用
+Request URL:http://10.120.54.47/rest/usercenter/coupondetails/searchCouponDetailsKuyu
+Request Method:POST
+Status Code:200 OK
+state:2
+couponId:
+nowPage:1
+pageShow:6
+已过期
+Request URL:http://10.120.54.47/rest/usercenter/coupondetails/searchCouponDetailsKuyu
+Request Method:POST
+Status Code:200 OK
+state:3
+couponId:
+nowPage:1
+pageShow:6
+
+评价管理
+待评价商品
+Request URL:http://10.120.54.47/rest/usercenter/order/ajaxlist
+Request Method:POST
+Status Code:200 OK
+pageShow:10
+nowPage:1
+searchName:
+nowChooseTab:waitcomment
+ranNum:0.8269048593359138
+已评价商品
+Request URL:http://10.120.54.47/rest/usercenter/order/ajaxlist
+Request Method:POST
+Status Code:200 OK
+pageShow:10
+nowPage:1
+searchName:
+nowChooseTab:appraise
+ranNum:0.7585211160855694
+
+我的收藏
+Request URL:http://10.120.54.47/pages/productfavorite/productfavorite.html
+Request Method:GET
+Status Code:200 OK (from disk cache)
+
+我的预约
+Request URL:http://10.120.54.47/pages/reserveorder/reserveorder.html
+Request Method:GET
+Status Code:200 OK
+
+秒杀页面
+Request URL:http://10.120.54.47/rest/front/product/toLimitProductKuyu
+Request Method:POST
+Status Code:200 OK
+promotionUuid:0dbeccfc510b41d7bb8427b20b219e67
+skuNo:TP001030102030200168
+秒杀订单
+Request URL:http://10.120.54.47/rest/front/product/fastBuyLimitProduct?skuNo=TP001030102030200168&promotionUuid=0dbeccfc510b41d7bb8427b20b219e67
+Request Method:GET
+Status Code:200 OK
+skuNo:TP001030102030200168
+promotionUuid:0dbeccfc510b41d7bb8427b20b219e67

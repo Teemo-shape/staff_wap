@@ -1,0 +1,37 @@
+{% extends "../layout/newUC.html" %} {% block title %}绑定邮箱{% endblock %}{% block navbar %}绑定邮箱{% endblock %}{% block header%}
+<script src="{{cdnPath}}res/js/bindPE{{hash}}.js"></script>
+{%endblock%} {% block body %}
+<!-- bind email start -->
+<div class="usercenter bindUser">
+  <div class="main">
+    <div class="title-icon">
+      <span class="icon iky-email"></span>
+    </div>
+    <p class="phone" id="bindMail"></p>
+    <div class="zqform" id="toBind">
+      <label class="m-form-group"><span class="z_ico iky-send"></span><input type="text" class="phone-val" id="bindEm" placeholder="请输入邮箱"><span class="z_ico zclose">&#xe638;<span></label>
+      <label class="m-form-group"><span class="z_ico iky-email"></span><input type="text"  class="code-val" placeholder="请输入校验码"  value="" id="getCodeTxt"><a href="javascript:;" class="get-code disabled" id="getCode">获取验证码</a></label>
+      <div class="zabtn">
+        <a href="javascript:history.go(-1);" class="btn">取消</a><input type="button" class="btn red disabled" id="toBindEm"
+          value="确定" disabled>
+      </div>
+    </div>
+    <!--换绑-->
+    <a href="javascript:;" class="bindBtn" id="bindBtn">我要更换绑定手机/邮箱</a>
+    <div class="zqform" id="changeBind">
+      <p id="sendInfo">验证码已发送至邮箱：<span>邮箱号码</span>。<br>请输入收到的验证码：</p>
+      <label class="m-form-group" id="checkOld"><span class="z_ico iky-send"></span><input type="text"  class="code-val" placeholder="请输入校验码"  value="" id="getCodeTxt1"><a href="javascript:;" class="get-code disabled" id="getCode1">获取验证码</a></label>
+      <p id="sucChk"></p>
+      <div id="changeEm">
+        <p id="verified">验证通过！请输入您要绑定的新邮箱：</p>
+        <label class="m-form-group"><span class="z_ico">&#xe621;</span><input type="text" class="phone-val" id="bindEmNew" placeholder="请输入新邮箱"><span class="z_ico zclose">&#xe638;<span></label>
+        <label class="m-form-group"><span class="z_ico iky-email"></span><input type="text"  class="code-val" placeholder="请输入校验码"  value="" id="getCodeTxt2"><a href="javascript:;" class="get-code disabled" id="getCode2">获取验证码</a></label>
+        <div class="zabtn">
+          <a href="javascript:history.go(-1);" class="btn">取消</a><input type="button" class="btn red disabled" id="changeBindEm"
+            value="确定" disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock%}

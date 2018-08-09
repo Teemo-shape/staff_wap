@@ -1,0 +1,296 @@
+/*
+ * @Author: chenlong 
+ * @Date: 2018-01-19 10:23:43 用户体验中心
+ */
+
+.experience {
+  .hei {
+      img {
+          height: 7.5rem;
+          width: 100%;
+      }
+  }
+  .shequ{
+    background: #fff;
+    .hotAvtivity{
+      padding-top:.75rem;
+      border-top: 1px solid #eee;
+      &:first-child{
+        border-top: 0;
+      }
+      .hotImg{
+        width:14.95rem;
+        margin: 0 auto;
+        img{
+          height: 5.75rem;
+          width:14.95rem;
+        }
+      }
+      .hotBottom{
+        span{
+          font-size: .7rem;
+          color:#333;
+        }
+        width:14.95rem;
+        height: 2.25rem;
+        overflow: hidden;
+        margin: 0 auto;
+        div{
+          width: 75%;
+          height: 2.25rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          // line-height: 2.25rem;
+          float:left;
+        }
+        .join{
+          text-align: center;
+          display: block;
+          font-size: .6rem;
+          width:3rem;
+          height: 1.25rem;
+          line-height: 1.25rem;
+          float:right;
+          margin-top: .5rem;
+          color:#ff4545;
+          border:1px solid #ff4545;
+          border-radius: 3px;
+        }
+      }
+      
+    }
+    .cutLine{
+      height: .6rem;
+      background: #f5f5f5;
+    }
+    .luntan{
+      .l-header{
+        overflow: hidden;
+        padding: 0 .6rem;
+        height: 2rem;
+        line-height: 2rem;
+        span{
+          float:left;
+          font-size: .7rem;
+          color: #333;
+        }
+        a{
+          float:right;
+          font-size: .6rem;
+          color: #666;
+        }
+      }
+      .detail{
+        li{
+          overflow: hidden;
+          padding: .5rem .6rem;
+          border-top: 1px solid #ddd;
+          .l-title{
+            .pingce{
+              font-size: .7rem;
+            }
+            overflow: hidden;
+            .l-title-right{
+              img{
+                display: inline;
+              }
+              float:right;
+              div{
+                float:left;
+              }
+              .mesNum{
+                margin-left: .6rem;
+              }
+              span{
+                font-size: .55rem;
+                color: #999;
+                position: relative;
+                bottom: .4rem;
+              }
+            }
+            .iky-arrow-right{
+              float:right;
+            }
+          }
+          .l-content{
+            font-size: .7rem;
+            color: #333;
+          }
+          .l-img{
+            margin-top: .3rem;
+            display: flex;
+            // justify-content: space-between;
+            img{
+              
+              width:4.5rem;
+              height: 2.85rem;
+              margin-left: .6rem;
+              &:first-child{
+                margin-left: 0;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  .jifen{
+    background: #fff;
+    .jf-header{
+      min-height: 3rem;
+      display: flex;
+      justify-content: center;
+      padding:.5rem 0;
+
+      img{
+        width: 14.75rem;
+        height: 3rem;
+      }
+    }
+    .jf-duihuan{
+      display: flex;
+      padding:.6rem;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        font-size: .7rem;
+        color: #333;
+      }
+      a{
+        font-size: .6rem;
+        color: #666;
+      }
+    }
+    .jf-content{
+      background: #fff;
+      overflow: hidden;
+      li{
+        float: left;
+        width:8rem;
+        padding:.6rem 0;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        img{
+          width:5rem;
+          height: 5rem;
+          margin:0 auto;
+        }
+        p{
+          margin-top: .5rem;
+          font-size: .7rem;
+          text-align: center;
+          overflow:hidden;
+           white-space:nowrap;
+          text-overflow: ellipsis;
+          &:first-child{
+            color: #333;
+          }
+          &:last-child{
+            color:#ff4545;
+          }
+        }
+        &:nth-child(even){
+          border-right: 0;
+        }
+      }
+    }
+  }
+  .yd-tab-nav {
+    display: block;
+    position: static;
+    border-bottom: 1px solid #e8e8e8;
+    white-space: nowrap;
+    overflow: scroll;
+    .yd-tab-active:before{
+      width: 2.5rem;
+      margin-left: -24%;
+    }
+    &:after{
+      border-bottom: none;
+    }
+    .yd-tab-nav-item {
+      padding:.5rem;
+      width:33%;
+      flex: none;
+      display: inline-block;
+      a {
+        font-size: .7rem;
+        padding: 0;
+      }
+      &:after {
+        border: none;
+      }
+    }
+  }
+  .donn {
+      padding:0 0.5rem ;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      border-top: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+  }
+  .ru {
+      margin-bottom: .6rem;
+      background: white;
+      border-bottom: 1px solid #e8e8e8;
+      ul {
+          overflow: hidden;
+          padding: .5rem 0;
+          li {
+              float: left;
+              width: 25%;
+              text-align: center;
+              font-size: .6rem;
+              color: #333;
+              margin: .5rem 0;
+              img {
+                  width: 1.75rem;
+                  height: 1.75rem;
+                  display: block;
+                  margin: 0 auto;
+              }
+              div {
+                  margin-top: .25rem;
+              }
+          }
+      }
+  }
+  .bottom {
+      font-size: .7rem;
+      background: white;
+      .left{
+         border-right: 1px solid #e8e8e8;
+      }
+      .left, .right {
+          background: white;
+          width: 50%;
+          float: left;
+          text-align: center;
+          img {
+              height: 2.5rem;
+              width: 2.5rem;
+              display: block;
+              margin: .75rem auto;
+          }
+          p {
+              color: #666;
+              font-size: .6rem;
+          }
+          div {
+              margin: 1rem 0;
+              font-size: .6rem;
+              color: #ff4545;
+          }
+          .f {
+              font-size: .8rem;
+          }
+          .go {
+              margin-top: 1.2rem;
+          }
+      }
+  }
+}

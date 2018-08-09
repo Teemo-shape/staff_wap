@@ -1,0 +1,359 @@
+@charset "UTF-8";
+// @import "variables";
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, h1, h2, h3, h4, h5, h6, video {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    // font-size: .75rem;
+    // font-size: 100px;
+    // font-size: 62.5%;
+    vertical-align: baseline;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-setting: 'liga', 'kern';
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    // box-sizing: border-box;
+    -webkit-user-select: none;
+    color: #333;
+    overflow-x: hidden;
+    // background-color: #FFF;
+    max-width: 16rem;
+    // max-width: 640px;
+    margin: 0 auto !important;
+    font-size: .65rem;
+}
+
+html, body {
+    height: 100%;
+    // width:100%;
+    position: relative;
+}
+
+img {
+    // overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.main {
+    height: 100%;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block;
+    font-size: .65rem;
+}
+
+input, textarea, select, input:focus, textarea:focus, select:focus {
+    &:-webkit-autofill {
+        background: none !important;
+        -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+        box-shadow: 0 0 0px 1000px white inset !important;
+    }
+    font-size: .65rem;
+}
+
+input:disabled, button:disabled {
+    background: #ddd !important;
+    color: #808080!important;
+    border-color: transparent!important;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background: none !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    box-shadow: 0 0 0px 1000px white inset;
+}
+
+select option:disabled {
+    color: #ccc;
+}
+
+input, textarea {
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #ccc;
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #ccc;
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #ccc;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #ccc;
+    }
+}
+
+input, textarea, a, button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li, a, input, select, label, button {
+    outline: none;
+    list-style: none;
+}
+
+button, html input[type=button], select, input[type=reset], input[type=text], input[type=password], input[type=submit], textarea {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -o-appearance: button;
+    -ms-appearance: button;
+    appearance: button;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+    /* 点击高亮的颜色*/
+    font-size: .65rem;
+    border-radius: .2rem;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 50% !important;
+    margin-left: -8rem !important;
+    width: 16rem !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.noscroll {
+    // position: fixed;
+    // width: 16rem;
+    // height: 100%;
+    overflow: hidden;
+}
+
+table {
+    border: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*控制cellspacing*/
+
+table td {
+    padding: 0;
+}
+
+.dask {
+    user-select: none;
+    -webkit-user-select: none;
+    position: fixed;
+    width: 16rem;
+    margin-left: -8rem;
+    pointer-events: auto;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 9999;
+    -webkit-overflow-scrolling: none;
+    right: 0;
+    background: rgba(0, 0, 0, .2);
+}
+
+.red {
+    color: #ff4545;
+}
+
+.dask {
+    user-select: none;
+    -webkit-user-select: none;
+    position: fixed;
+    width: 16rem;
+    margin-left: -8rem;
+    pointer-events: auto;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 9999;
+    -webkit-overflow-scrolling: none;
+    right: 0;
+    background: rgba(0, 0, 0, .2);
+}
+
+.sync-loding, .loding {
+    // background: url('../img/loading.gif') no-repeat center center;
+    width: 16rem;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 0;
+    margin-left: -8rem;
+    -webkit-overflow-scrolling: none;
+    pointer-events: auto;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    .loading {
+        display: block;
+        width: .8rem;
+        height: .8rem;
+        border: 3px solid #fff;
+        top: 50%;
+        left: 50%;
+        margin-left: -.4rem;
+        margin-top: -.6rem;
+        position: absolute;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: rotate .5s linear infinite;
+    }
+    .text {
+        position: absolute;
+        bottom: 6px;
+        width: 100%;
+        text-align: center;
+        font-size: .6rem;
+    }
+    .ldbox {
+        font-size: .5rem;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        background: rgba(0, 0, 0, 0.39);
+        border-radius: 5px;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate
+/*Safari and Chrome*/
+
+{
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.yd-popup-center {
+    width: 16rem !important;
+}
+
+
+.kf-up {
+    position: fixed;
+    right: 2%;
+    bottom: 5.5rem;
+    z-index: 80;
+    // opacity: .7;
+    height: 2.5rem;
+    z-index: 99;
+    a {
+        color: #333;
+        display: block;
+        width: 2.1rem;
+        height: 2.1rem;
+        line-height: 2.1rem;
+        margin-top: .4rem;
+        text-align: center;
+        font-size: 1.2rem;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.17);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+        font-size: 1rem;
+    }
+    .iky-bear {
+        color: #696969;
+    }
+    .iky-arrow-up {
+        display: none;
+        color: #696969;
+    }
+}
+
+.in .iky-arrow-up {
+    display: block;
+}
+
+// 此处为vue 的过度
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+
+.fade-enter, .fade-leave-to
+/* .fade-leave-active in <2.1.8 */
+
+{
+    opacity: 0
+}
+
+// 此处为nuxt 的过度
+.page-enter-active, .page-leave-active {
+    transition: opacity .5s;
+}
+
+.page-enter, .page-leave-active {
+    opacity: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+.clearfix { *zoom:1;}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.productDetail .row .col3.txrt.fr{
+    float: right;
+}

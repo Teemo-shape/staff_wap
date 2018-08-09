@@ -1,0 +1,192 @@
+.background-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    z-index: -1;
+}
+.my-comments.comments-detail {
+    background-color: #f1f1f1;
+    padding: 0;
+    .comment-tab {
+        display: flex;
+        position: relative;
+        z-index: 0;
+        border-bottom: 1px solid #b2b2b2;
+        .navtab {
+            font-size: 0.6rem;
+            line-height: 1rem;
+            flex: 1;
+            text-align: center;
+            position: relative;
+            a {
+                padding: 0.5rem 0;
+                display: inherit;
+                background-color: #fff;
+            }
+        };
+        .navtab.active {
+            color: #ff5e53;
+        }
+        .navtab.active:before {
+            content: "";
+            width: 55%;
+            height: 2px;
+            position: absolute;
+            left: 57.5%;
+            bottom: 0;
+            margin-left: -35%;
+            z-index: 4;
+            background-color: currentColor;
+        }
+    }
+    .item {
+        margin-top: 0;
+        .goods {
+            height: 100%;
+            .goods-details {
+                .goods-name {
+                    a {
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        width: 10rem;
+                        display: block;
+                    }
+                }
+            }
+            .goods-comments {
+                .zpBtn {
+                    margin-top: 0;
+                }
+            }
+            &:before {
+                content: '';
+                border-bottom: 2px solid #E6E6E6;
+                width: 92%;
+                display: block;
+                position: absolute;
+                bottom: 2px;
+            }
+        }
+    }
+}
+.success-comment {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5.5rem;
+        background: url(/img/comsuccessbg2X.png);
+        background-size: 100% 100%;
+        box-sizing: border-box;
+        margin-bottom: 0.5rem;
+        .sucess {
+            margin-bottom: 0.8rem;
+            text-align: center;
+            font-size: 0.6rem;
+            font-family: "PingFang SC";
+            line-height: 1rem;
+            letter-spacing: 1.2px;
+            color: #FFECD8;
+        }
+        .return-btn {
+            button {
+                width: 4.5rem;
+                height: 1.25rem;
+                line-height: 1.25rem;
+                border: 1px solid #fff79a;
+                border-radius: 4px;
+                font-size: 0.5rem;
+                margin: 0 .6rem;
+                color: #fff79a;
+                letter-spacing: 1.2px;
+            }
+        }
+
+    }
+    .undetermined {
+        text-align: center;
+        width: 100%;
+        height: 7.26rem;
+        line-height: 7.26rem;
+        font-size: 0.6rem;
+        background-color: #FFFFFF;
+        color: #999999;
+    }
+}
+.add-comments {
+    .comment-content {
+        .order {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 2.5rem;
+            line-height: 2rem;
+            margin-bottom: 0.3rem;
+            .img-s {
+                margin-right: 0.8rem;
+                img {
+                    height: 1.6rem;
+                    width: 1.6rem;
+                }
+            }
+            .con-s {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 10rem;
+                display: block;
+            }
+        }
+        .comment-word {
+            font-size: 0;
+            position: relative;
+            background: #fff;
+            padding: 0 0.6rem;
+            .add {
+                height: 1.88rem;
+                line-height: 1.88rem;
+                font-size: 0.6rem;
+            }
+            textarea {
+                width: 100%;
+                padding: 0.3rem 0 1.1rem 0;
+                margin-top: 0;
+                border-top: 1px solid #efefef;
+                border-bottom: 1px solid #efefef;
+                border-left: none;
+                border-right: none;
+                height: 5.5rem;
+                font-size: 0.7rem;
+            }
+            .num {
+                font-size: 0.65rem;
+                position: absolute;
+                right: 0.8rem;
+                bottom: 0.5rem;
+                color: #CCCCCC;
+            }
+        }
+        .comment-pic {
+            background: #fff;
+            margin-bottom: 0.5rem;
+            .imgs {
+                margin: 0 0.6rem;
+                border-top: 1px solid #efefef;
+                padding: 0.8rem 0.4rem;
+            }
+        }
+    }
+    .submit {
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}
+

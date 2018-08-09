@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %} - {{ site_name }}</title>
+    {% include "./head.html" %} {% block header %}{% endblock %}
+</head>
+
+<body>
+    {% block body %}{% endblock %} {% block footer %}{% endblock %} 
+</body>
+
+</html>

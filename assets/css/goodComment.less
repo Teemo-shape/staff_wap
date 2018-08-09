@@ -1,0 +1,121 @@
+.comment-write {
+    .yd-cell-box {
+        margin-bottom: 0.15rem;
+        .yd-cell {
+            &:after {
+                content: none;
+            }
+            .yd-cell-item {
+                height: 100%;
+                width: 100%;
+                line-height: 100%;
+                padding-left: 0;
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+.g-comment.comment-write {
+    .comment-content {
+        margin-bottom: 1rem;
+        .order-detail {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            font-size: 0.6rem;
+            padding: 0.3rem 0.6rem;
+            background: #fff;
+            height: 4.68rem;
+            position: relative;
+            width: 100%;
+            .img {
+                padding-right: 0.6rem;
+                img {
+                    max-width: 3.5rem;
+                    max-height: 3.5rem;
+                }
+            }
+            .cotent {
+                position: relative;
+                .rateDescription {
+                    height: 0.7rem;
+                    width: 4rem;
+                    margin-left: 5.8rem;
+                }
+            }
+        }
+        .comment-word {
+            font-size: 0;
+            position: relative;
+            background: #fff;
+            padding: 0 0.6rem;
+            textarea {
+                width: 100%;
+                padding: 0.3rem 0 1.1rem 0;
+                margin-top: 0;
+                border-top: 1px solid #efefef;
+                border-bottom: 1px solid #efefef;
+                border-left: none;
+                border-right: none;
+                height: 5.5rem;
+                font-size: 0.7rem;
+            }
+            .num {
+                font-size: 0.65rem;
+                position: absolute;
+                right: 0.8rem;
+                bottom: 0.5rem;
+                color: #CCCCCC;
+            }
+        }
+        .comment-pic {
+            background: #fff;
+            margin-bottom: 0.5rem;
+            .imgs {
+                margin: 0 0.6rem;
+                border-top: 1px solid #efefef;
+                padding: 0.8rem 0.4rem;
+            }
+        }
+        .comment-rate {
+            background: #fff;
+            .rate-title {
+                margin: 0 0.6rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 1.9rem;
+                line-height: 1.9rem;
+                border-bottom: 1px solid #efefef;
+                .setAnonymous {
+                    display: flex;
+                    .iconfont-tcl {
+                        margin-right: 0.3rem;
+                        font-size: 0.9rem;
+                    }
+                    .icon-danxuan-xuanzhong {
+                        color: #ff4545;
+                    }
+                }
+            }
+            .yd-cell {
+                height: 3.4rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 0.6rem;
+            }
+        }
+    }
+    .submit {
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 10;
+    }
+}

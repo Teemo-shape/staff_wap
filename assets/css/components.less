@@ -1,0 +1,321 @@
+// 省市区多级选择
+.yd-cityselect {
+    width: 16rem;
+    left: 50%;
+    margin-left: -8rem;
+    overflow: hidden;
+    .yd-cityselect-content {
+        padding-bottom: 2.7rem;
+    }
+    .yd-cityselect-content.yd-cityselect-next2 {
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%);
+    }
+}
+
+// 图片点击预览
+.imgshow {
+  .mask-black-dialog {
+      background-color: rgba(0, 0, 0, .6);
+      z-index: 9999;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  .img-confirm {
+      width: 100%;
+      height: 100%;
+      animation: zoomIn .15s ease forwards;
+      position: relative;
+  }
+  .img-con-box {
+      margin-top: 30%;
+  }
+  .img-con-box .icon {
+      position: absolute;
+      color: #fff;
+      top: 20.5%;
+  }
+  .img-con-box img {
+      display: block !important;
+      margin: 50% auto !important;
+  }
+  .img-con-box .l {
+      left: .3rem;
+  }
+  .img-con-box .r {
+      right: .3rem;
+  }
+  .img-confirm .confirm-btn {
+      font-size: 1.5rem;
+      color: #fff;
+      position: absolute;
+      right: .5rem;
+      top: -2.3rem;
+  }
+}
+
+// 商品详情的tab切换
+.tab-slide {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    .invisible {
+        visibility: hidden;
+    }
+    .tabswiper {
+        position: relative;
+        overflow: hidden;
+    }
+    .tabswiper-wrap {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease;
+    }
+    .tabswiper-wrap.dragging {
+        transition: none;
+    }
+    .tabswiper-wrap>div {
+        overflow-x: hidden;
+        flex-shrink: 0;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    .tab-title-container {
+        position: relative;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /*display: table;*/
+        margin: 0 auto;
+        list-style: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-decoration: none;
+        -webkit-user-select: none;
+        outline: none;
+        border-bottom: 1px solid #dddddd;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -o-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        -webkit-appearance: none;
+        text-decoration: none;
+    }
+    .tab-title-container.fixed {
+        position: fixed;
+        left: 0;
+    }
+    .tab-title {
+        -webkit-appearance: none;
+        height: 35px;
+        line-height: 35px;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-decoration: none;
+        -webkit-user-select: none;
+        outline: none;
+        outline-style: none;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background-color: #fff;
+        /*    display: block;*/
+    }
+    .tab-title.active, .tab-title:active {
+        border-bottom: 2px solid #ef4f4f;
+        color: #ef4f4f;
+    }
+}
+
+// 日历插件
+@blue: #9ecaed;
+@deepBlue: #2f80c3;
+@white: #fff;
+@gray: #888;
+@red: #f00;
+@deepRed: #ff4450;
+.calendar-container {
+  width: 100%;
+  display: inline-block;
+  height: 13.3rem;
+  position: relative; // padding: 10px;
+  text-align: center;
+  font-family: SimHei;
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0;
+  }
+  .calendar-input {
+    box-sizing: border-box; // width: 200px;
+    width: 100%;
+    height: 30px;
+    padding {
+      left: 5px;
+      right: 5px;
+    }
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    cursor: pointer;
+    outline: none;
+    transition: all .6s;
+  }
+  #calendar {
+    position: absolute; // width: 200px;
+    width: 100%; // height: 240px;
+    box-sizing: border-box; // border: 2px solid #eee;
+    border-radius: 2%;
+    div,
+    span {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      // height: 12.5%;
+      width: 100%;
+    }
+    span {
+      height: 100%; // width: 14.2857%;
+      width: 1.6rem;
+      margin: 0 .25rem;
+      font-size: .7rem;
+    }
+
+    #calendar-header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      span {
+        display: flex;
+        align-items: center;
+      }
+      #date-box {
+        flex-grow: 2;
+      }
+    }
+    .week {
+      box-sizing: border-box;
+      padding: 5px;
+      font-size: .6rem;
+      span {
+        height: 100%;
+        margin: 0 .25rem;
+      }
+    }
+    .days {
+      box-sizing: border-box; // height: 75%;
+      padding: 5px;
+      font-size: .5rem;
+      span {
+        // height: 16.666667%;
+        height: 1.6rem;
+        cursor: pointer;
+        transition: all .5s;
+      }
+      .unselect {
+        cursor: default;
+      }
+    }
+  }
+}
+
+.blue-theme {
+  .focus {
+    border-color: @blue;
+    box-shadow: 0 0 5px @blue;
+  }
+  .arrow {
+    cursor: pointer;
+    color: @deepBlue;
+    transition: color .5s;
+    &:hover {
+      color: @blue;
+    }
+  }
+  .weekend {
+    color: @deepBlue;
+  }
+  .days {
+    span {
+      &:hover {
+        // border-radius: 2px;
+        // background-color: @blue;
+        // color: #fff;
+      }
+    }
+    .unselect {
+      border-radius: 0; // background-color: #fff;
+      color: #ccc;
+    }
+    .select {
+      border-radius: 50%;
+      background-color: @deepBlue;
+      color: #fff;
+    }
+  }
+}
+
+.red-theme {
+  #calendar-header {
+    color: #333; // color: @white;
+    // background-color: @deepRed;
+  }
+  .focus {
+    border-color: #ccc;
+    box-shadow: 0 0 5px #ccc;
+  }
+  .arrow {
+    cursor: pointer;
+  }
+  .weekend {
+    color: @deepRed;
+  }
+  .days {
+    color: @gray;
+    span {
+      &:hover {
+        border-radius: 2px;
+        // background-color: @red;
+        // color: #fff;
+      }
+    }
+    .unselect
+    {
+      border-radius: 0; // background-color: #fff;
+      color: #ccc;
+    }
+    .select
+     {
+      border-radius: 50%;
+      background-color: @deepRed;
+      color: #fff;
+    }
+  }
+}

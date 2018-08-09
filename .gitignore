@@ -1,0 +1,22 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+.nginx
+
+# Nuxt generate
+dist
+build/
+log/
+*.log
+.DS_Store
+styles.min.css
+*.zip
+tclshop-wap/
+.DS_Store
+.idea
+/static/css/styles.min.css

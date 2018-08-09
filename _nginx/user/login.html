@@ -1,0 +1,58 @@
+{% extends "../layout/newUC.html" %} {% block title %}登录{% endblock %} {% block navbar %}登录{% endblock %}{% block header%}
+<script src="{{cdnPath}}res/js/login{{hash}}.js"></script>
+{%endblock%} {% block body %}
+<div class="main" id="main">
+    <!---login html-->
+    <div class="m-login">
+        <div class="m-form-group group">
+            <span class="iky-user"></span>
+            <input type="text" class="nminfo" id="uid" placeholder="请输入登录账号">
+            <i class="iky-remove"></i>
+        </div>
+        <div class="m-form-group m-group">
+            <span class="iky-lock"></span>
+            <input type="password" class="pswdinfo" id="pwd" placeholder="请输入密码" />
+            <i class="iky-eye"></i>
+        </div>
+        <div class="verify dvVerify J-ValidateCode">
+            <div class="m-form-group m-group">
+                <input type="text" class="J-LoginCode" id="captchadata" placeholder="请输入验证码" maxlength="4"
+                    onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                <span class="pass-code"><img src="" id="imgcode"></span>
+            </div>
+        </div>
+        <div class="login-password">
+            <label class="fl"><input name="Fruit" type="checkbox" value=""/>记住账号密码 </label>
+        </div>
+        <div class="m-btn J-Login">
+            <input type="button" class="btn" id="loginbtn" disabled="disabled" value="登录" />
+        </div>
+        <div class="m-cancel">
+            <a id="regbtn">立即注册</a>
+            <span>|</span>
+            <a href="/user/resetPassword.html" class="">忘记密码</a>
+        </div>
+    </div>
+    <div class="login-m-other">
+        <div class="other-title">
+            <span class="line"></span>
+            <h3>其他登录</h3>
+            <span class="line"></span>
+        </div>
+        <div class="other-login">
+            <a class="J-LoginOther" id="login-qq" data-type="2">
+                <span><img src="/res/img/others_qq.png"></span>
+                <p>QQ</p>
+            </a>
+            <a class="J-LoginOther" id="login-webchat" data-type="10">
+                <span class="iky-webchat"></span>
+                <p>微信</p>
+            </a>
+            <a href="#" class="J-LoginOther" id="login-weibo" data-type="1">
+                <span><img src="/res/img/weibo.png"></span>
+                <p>微博</p>
+            </a>
+        </div>
+    </div>
+</div>
+{%endblock%}

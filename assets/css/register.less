@@ -1,0 +1,88 @@
+.register {
+  .yd-flexview{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+      background: #fff;
+  }
+  .modal {
+    overflow: hidden;
+    .title {
+      margin: 1rem .5rem;
+      text-align: center;
+      h4 {
+        font-size: .7rem;
+        font-weight: 700;
+        color: #333;
+        display: inline-block;
+      }
+      .close {
+        font-size: 1rem;
+        color: #ccc;
+        float: right;
+      }
+    }
+    .content {
+      height: 10rem;
+      padding: 0 .85rem;
+      overflow-y: scroll;
+      p {
+        font-size: .65rem;
+        color: #666;
+        line-height: 1.2rem;
+      }
+        strong{
+            display: block;margin: .4rem 0;}
+    }
+    .btn-bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      .mybtn{
+        margin-top: 0;border: none;width: 50%;display: inline-block;border-radius: 0;
+        &:nth-child(1){background-color: #ccc;color: #fff;}
+      }
+    }
+  }
+  .container {
+    padding: 1.5rem 1.3rem;
+    .name {
+      font-size: 0.6rem;
+      color: #999;
+        i{
+            position: relative;
+            top: .15rem;
+            color: #ff4545;
+        }
+    }
+    .yd-input {
+      font-size: .75rem;
+      color: #333;
+      padding-top: .25rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .tip {
+      font-size: .55rem;
+      color: #999;
+      a {
+        color: #151515;
+        text-decoration: underline;
+      }
+    }
+    .red {
+      color: #FF4545;
+    }
+    .yd-radio-text {
+      color: #333;
+      font-size: .68rem;
+      line-height: .7rem;
+    }
+  }
+}
+.mgt50 {
+  margin-top: 1.25rem;
+}
